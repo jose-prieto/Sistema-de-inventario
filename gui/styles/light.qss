@@ -1,0 +1,247 @@
+QMainWindow{
+	background: #FFFFFF;
+}
+
+QWidget{
+	background: #FFFFFF;
+	color: #263238;
+	font: Open Sans;
+}
+
+
+/* === QScrollBar:horizontal === */
+QScrollBar:horizontal {
+	background: transparent;				/* Background where slider is not */
+	height: 10px;
+	margin: 0;
+}
+
+QScrollBar:vertical {
+	background: transparent;				/* Background where slider is not */
+	width: 10px;
+	margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background: #CFD8DC;					/* Slider color */
+    min-width: 16px;
+	border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #CFD8DC;					/* Slider color */
+    min-height: 16px;
+	border-radius: 5px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal,
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;												/* Removes the dotted background */
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal,
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {	/* Hides the slider arrows */
+      border: none;
+      background: none;
+}
+
+QDoubleSpinBox::add-line:vertical{	/* Hides the slider arrows */
+	border: none;
+	background: none;
+}
+
+QDoubleSpinBox, QSpinBox{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: #ECEFF1;
+	border-radius: 8px;
+	border: 2px solid transparent;
+}
+
+
+QLineEdit{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: #ECEFF1;
+	border-radius: 8px;
+	border: 2px solid transparent;
+}
+
+QTextEdit, QPlainTextEdit{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #ECEFF1;
+	border-radius: 8px;
+	border: 2px solid transparent;
+}
+
+QDialog, QListView {
+	padding: 2px;
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	outline: 0;
+}
+
+/* Custom Lists */
+QListView#listMenu {
+	background-color: #ffffff;
+}
+
+QListView#listNotifications {
+	background: #ffffff;
+}
+
+QListView::item:hover {
+	background: #B0BEC5;
+	color: #263238
+}
+
+QListView::item{
+	padding: 8px;
+	background: #ECEFF1;
+	border-radius: 8px;
+	border: 2px solid transparent;
+}
+
+QListView::item:selected {
+	background: #1E88E5;
+	color: #FFFFFF;
+}
+
+QPushButton {
+	border-radius: 8px;
+	background: #ECEFF1;
+	padding: 4px 22px;
+}
+
+QPushButton:hover {
+	background: #B0BEC5;
+	color: #263238
+}
+
+QPushButton:pressed {
+	background: #1E88E5;
+	color: #FFFFFF;
+
+}
+
+QPushButton:disabled {
+	background-color: #ebebeb;
+	color: #a3a3a3;
+}
+
+/*----------------------------------------------------------*/
+
+QComboBox {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background: #ECEFF1;
+	border-radius: 8px;
+	border: 2px solid transparent;
+}
+
+QComboBox:hover,
+QAbstractSpinBox:hover,
+QLineEdit:hover,
+QTextEdit:hover,
+QPlainTextEdit:hover,
+QAbstractView:hover,
+QTreeView:hover {
+    border: 1px solid #3daee9;
+}
+
+QComboBox:on {
+    padding-top: 3px;
+    padding-left: 4px;
+    selection-background-color: #6574ff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ECEFF1;
+    border-radius: 2px;
+    selection-background-color:  #6574ff;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/*-----------------------------------------------------------------*/
+
+QTabWidget {
+    border: 0px transparent black;
+}
+
+QTabWidget::pane {
+    border: 1px solid #ECEFF1;
+    padding: 5px;
+    margin: 0px;
+}
+
+/* TOP TABS */
+
+QTabBar::tab:top {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #ECEFF1;
+	border-bottom: 1px transparent black;
+    padding: 5px;
+    min-width: 50px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+QTabBar::tab:top:selected {
+	border-bottom: 2px solid #5465ff;
+}
+
+QTabBar::tab:top:!selected {
+	background-color: rgb(231, 230, 230);
+}
+
+QTabBar::tab:top:hover {
+	background-color: #ffffff;
+}
+
+
+/* Calendar Popup */
+QCalendarWidget QToolButton {
+	color: black;
+	border-radius: 8px;
+}
+
+QCalendarWidget QSpinBox::up-button {
+	subcontrol-origin: border;
+	subcontrol-position: top right;
+	width:20px;
+	border-radius: 8px;
+}
+
+QCalendarWidget QSpinBox::down-button {
+	subcontrol-origin: border;
+	subcontrol-position: bottom right;
+	width:20px;
+	border-radius: 8px;
+}
+
+
+QSpinBox::up-button {
+	width:20px;
+}
+
+QSpinBox::down-button {
+	width:20px;
+}
